@@ -116,7 +116,7 @@ func (o *Orchestrator) createVM() string {
 		Region: o.Region,
 		Size:   "s-1vcpu-1gb-amd",
 		Image: godo.DropletCreateImage{
-			Slug: "ubuntu-23-10-x64",
+			Slug: "ubuntu-24-04-x64",
 		},
 		Monitoring: false,
 		SSHKeys:    []godo.DropletCreateSSHKey{{ID: o.SSHKeyID}},
